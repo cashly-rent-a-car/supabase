@@ -1,16 +1,7 @@
-<html>
-  <body style="font-family: Arial, sans-serif; color: #333;">
-    <div style="max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;">
-      <h2 style="text-align: center; color: #4CAF50;">Confirme seu e-mail</h2>
-      <p>Olá {{.User.Email}},</p>
-      <p>Obrigado por se registrar! Para confirmar seu e-mail, insira o código de verificação abaixo:</p>
-      
-      <div style="text-align: center; margin: 20px 0;">
-        <span style="font-size: 24px; font-weight: bold; color: #4CAF50;">{{.Code}}</span>
-      </div>
-      
-      <p>Se você não solicitou esta verificação, por favor ignore este e-mail.</p>
-      <p>Atenciosamente,<br>Sua Equipe</p>
-    </div>
-  </body>
-</html>
+<h2>Confirme sua inscrição</h2>
+
+<p>Siga este link para confirmar seu cadastro:</p>
+<p><a href="{{ .ConfirmationURL }}">Confirmar e-mail</a></p>
+
+<p>Se preferir, você pode inserir este código de verificação:</p>
+<h3>{{ .Code }}</h3>
